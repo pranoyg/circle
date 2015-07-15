@@ -11,7 +11,7 @@ machine:
 
   # Override /etc/hosts
   hosts:
-    circlehost: 127.0.0.1
+    circlehost: 127.0.0.2
     dev.mycompany.com: 127.0.0.1
 
   # Add some environment variables
@@ -28,7 +28,7 @@ checkout:
 ## Customize dependencies
 dependencies:
   pre:
-    - npm install coffeescript # install from a different package manager
+    - npm install coffee-script # install from a different package manager
     - gem uninstall bundler # use a custom version of bundler
     - gem install bundler --pre
 
